@@ -1,18 +1,15 @@
+# Minted
+Turn any SVG into a physically-lit 3D gold medallion for SwiftUI with cloisonne enamel, engraved lettering and momentum spins, and no 3D assets.
+
 <p align="center">
   <img src="assets/demo.gif" width="300" alt="Minted turning an SVG heart into a spinning 3D gold coin" />
-</p>
-
-<h1 align="center">Minted</h1>
-
-<p align="center">
-  Turn any SVG into a physically-lit 3D gold medallion for SwiftUI.<br />
-  Cloisonne enamel, engraved lettering, orange-peel backs, and momentum spins. No 3D assets, ever.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Swift-5.9+-F05138?logo=swift&logoColor=white" alt="Swift 5.9+" />
   <img src="https://img.shields.io/badge/iOS-17+-000000?logo=apple&logoColor=white" alt="iOS 17+" />
-  <img src="https://img.shields.io/badge/License-MIT-blue" alt="MIT License" />
+  [![GitHub stars](https://img.shields.io/github/stars/haplollc/Minted?style=flat)](https://github.com/haplollc/Minted/stargazers)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 </p>
 
 <p align="center">
@@ -20,6 +17,27 @@
   <br>
   <sub>If Minted is useful to you, a coffee keeps it going.</sub>
 </p>
+
+**Install**
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/haplollc/Minted", from: "1.0.0")
+]
+```
+
+**Try it**
+
+```swift
+import Minted
+
+let heart = CoinDesign(svgPathData: "M12 21s-6.7-4.35-9.33-8.11 ...")!
+
+SpinningCoinView(design: heart)
+    .frame(width: 300, height: 300)
+```
+
+If this is useful, a star helps others find it.
 
 ---
 
@@ -194,3 +212,19 @@ the collection in Bilbo was built: describe the pin you want, generate the art,
 drop the image in, get a coin.
 
 Made by [Haplo LLC](https://haploapp.com). Extracted from [Bilbo](https://haploapp.com/bilbo), our travel planning app, where landmarks you visit are struck into a passport of medallions.
+---
+
+## More from Haplo
+
+More open source from [Haplo](https://github.com/haplollc), built by the same solo developer:
+
+- [ThinkingOrbs](https://github.com/haplollc/ThinkingOrbs): dotted, honestly-3D loading indicators for AI and agent interfaces in SwiftUI. Nine hand-tuned designs, two tuned sizes.
+- [Vesalius](https://github.com/haplollc/Vesalius): a map of your codebase for Claude Code, an on-device code graph with an MCP server, a CLI, a Mac app and a VS Code extension.
+- [MuscleMapKit](https://github.com/haplollc/MuscleMapKit): interactive 3D muscle map for iOS. Shade muscles by how hard they were worked, spin the body, tap a group.
+- [ProcessingField](https://github.com/haplollc/ProcessingField): a SwiftUI progress field, a grid of marks whose sizes describe one soft shape that drifts, folds and breathes while your app is busy.
+- [Gepetto](https://github.com/haplollc/Gepetto): a browser agent for iOS and macOS that a person can take over at any time. Real WKWebView, small on-device models, a native SwiftUI panel.
+- [ClayGlobe](https://github.com/haplollc/ClayGlobe): a claymorphic 3D globe for SwiftUI that plants a waving flag on every country you visit.
+- [Mirage](https://github.com/haplollc/Mirage): one-stop on-device diffusion image-generation engine for iOS / macOS / visionOS.
+- [SiriGlass](https://github.com/haplollc/SiriGlass): the Siri drop from iOS 27, for SwiftUI. Liquid Glass that pours out of the Dynamic Island and lights up with your voice.
+- [Scrubbers](https://github.com/haplollc/Scrubbers): twelve sliders you will want to touch, for SwiftUI. One view, one enum.
+- [KoiPond](https://github.com/haplollc/KoiPond): a living koi pond for SwiftUI. Koi glide over any view, lily pads drift on top, and a Metal shader ripples and refracts it all.
